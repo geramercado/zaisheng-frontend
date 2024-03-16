@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import Slider from "./slider";
+
+const items = [
+  <div key="1" className="slider-div flex items-center justify-center">
+    Div 1
+  </div>,
+  <div key="2" className="slider-div">
+    Div 2
+  </div>,
+  <div key="3" className="slider-div">
+    Div 3
+  </div>,
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Slider items={items} />
     </div>
   );
 }
